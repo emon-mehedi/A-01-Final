@@ -29,7 +29,7 @@ nav{
   padding: 1.5rem;
 }
 
-nav img{
+.logo{
   height: 2.5rem;
 }
 
@@ -40,7 +40,14 @@ nav ul{
 }
 
 nav ul li{
-  margin-right: 1rem;
+  padding: 0.6rem 0.5rem;
+}
+
+nav ul li:hover{
+  color: white;
+  background-color: #1d4ed8;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 .btn-main{
@@ -53,6 +60,9 @@ nav ul li{
   border-radius: 10px;
 }
 
+.btn-main:hover{
+  background-color: #1d4fd8d8;
+}
 
 /*Hero*/
 .hero{
@@ -222,4 +232,66 @@ nav ul li{
   background-color: white;
   color: #1d4ed8;
   border: 1px solid #1d4ed8;
+}
+
+.btn-main.outline:hover{
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+}
+
+
+
+
+/* My-section */
+
+.my-section{
+  margin-bottom: 3rem;
+}
+
+
+
+
+
+
+/* Footer */
+
+footer{
+  width: 85vw;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer img{
+  height: 2.5rem;
+}
+
+.social-links{
+  display: flex;
+  gap: 1rem;
+}
+
+i{
+  font-size: 2rem;
+  color: #0d1b2a;
+}
+
+.footer hr{
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #6b7280;
+  font-size: 0.9rem;
 }
