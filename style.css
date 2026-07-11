@@ -13,10 +13,6 @@ img {
   max-width: 100%;
 }
 
-body {
-  padding-bottom: 1000px;
-}
-
 /*Navigation*/
 nav {
   display: flex;
