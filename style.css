@@ -1,24 +1,24 @@
 /*General*/
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Inter, sans-serif;
 }
 
-p{
+p {
   font-size: 1rem;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-body{
+body {
   padding-bottom: 1000px;
 }
 
 /*Navigation*/
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,28 +29,28 @@ nav{
   padding: 1.5rem;
 }
 
-.logo{
+.logo {
   height: 2.5rem;
 }
 
-nav ul{
+nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
 }
 
-nav ul li{
+nav ul li {
   padding: 0.6rem 0.5rem;
 }
 
-nav ul li:hover{
+nav ul li:hover {
   color: white;
   background-color: #1d4ed8;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.btn-main{
+.btn-main {
   background-color: #1d4ed8;
   color: white;
   padding: 0.8rem 2.2rem;
@@ -60,12 +60,12 @@ nav ul li:hover{
   border-radius: 10px;
 }
 
-.btn-main:hover{
+.btn-main:hover {
   background-color: #1d4fd8d8;
 }
 
 /*Hero*/
-.hero{
+.hero {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url('./assets/banner.jpg');
   display: flex;
   flex-direction: column;
@@ -76,18 +76,19 @@ nav ul li:hover{
   margin-bottom: 4rem;
 }
 
-.hero-description{
+.hero-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.hero-description h1{
+
+.hero-description h1 {
   color: white;
   font-size: 5rem;
 }
 
-.hero-description p{
+.hero-description p {
   color: rgba(255, 255, 255, 0.9);
   width: 50%;
   font-size: 1.4rem;
@@ -102,7 +103,7 @@ nav ul li:hover{
 
 /*Meet-the-speakers*/
 
-.meet-the-speakers{
+.meet-the-speakers {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,39 +111,39 @@ nav ul li:hover{
   margin: auto;
 }
 
-.meet-the-speakers h1{
+.meet-the-speakers h1 {
   font-size: 3.5rem;
   margin-bottom: 3rem;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem 2rem;
 }
 
-.grid{
+.grid {
   border: 1px solid rgba(128, 128, 128, 0.2);
   border-radius: 1rem;
   overflow: hidden;
 }
 
-.grid div{
+.grid div {
   padding: 1rem;
 }
 
-.department{
+.department {
   font-size: 0.8rem;
   color: #1d4ed8;
   margin-bottom: 0.5rem;
 }
 
-.name{
+.name {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
-.appointment{
+.appointment {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
@@ -151,7 +152,7 @@ nav ul li:hover{
 
 /* Secure-your-spot */
 
-.secure-your-spot{
+.secure-your-spot {
   width: 85vw;
   margin: auto;
   display: flex;
@@ -160,63 +161,73 @@ nav ul li:hover{
   margin-top: 5rem;
 }
 
-.secure-heading{
+.secure-heading {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 
-.cards{
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 3rem;
   gap: 1rem;
 }
 
-.card{
+.card {
   border: 2px solid rgba(128, 128, 128, 0.2);
   border-radius: 10px;
   width: 18rem;
   padding: 2rem;
 }
 
-.price p{
+.card:hover,
+.grid:hover {
+  box-shadow: 0 5px 20px rgba(102, 51, 153, 0.15);
+  cursor: pointer;
+}
+
+.price p {
   font-size: 0.8rem;
   margin-bottom: 0.6rem;
 }
-.price h1{
+
+.price h1 {
   font-size: 2.75rem;
   margin-bottom: 0.6rem;
 }
-.facilities{
+
+.facilities {
   margin-left: 1rem;
   margin-top: 1rem;
 }
 
-.facilities li{
+.facilities li {
   padding: 0.5rem;
   font-size: 0.85rem;
 }
 
-#pro{
+#pro {
   color: #93c5fd;
 }
-#facilities li, #per{
+
+#facilities li,
+#per {
   color: rgba(255, 255, 255, 0.5);
 
 }
 
-#facilities li::marker{
+#facilities li::marker {
   color: #93c5fd;
 }
 
-.card button{
+.card button {
   width: 100%;
   margin-top: 1rem;
 }
 
 
-.card.middle{
+.card.middle {
   background-color: #0d1b2a;
 }
 
@@ -224,17 +235,17 @@ nav ul li:hover{
   color: white;
 }
 
-.card.right{
+.card.right {
   background-color: #f8f9fb;
 }
 
-.btn-main.outline{
+.btn-main.outline {
   background-color: white;
   color: #1d4ed8;
   border: 1px solid #1d4ed8;
 }
 
-.btn-main.outline:hover{
+.btn-main.outline:hover {
   background-color: #1d4ed8;
   color: white;
   border: none;
@@ -242,54 +253,123 @@ nav ul li:hover{
 
 
 
+/* Journey Section */
 
-/* My-section */
+.journey {
+  width: 85vw;
+  margin: 5rem auto;
+  text-align: center;
+}
 
-.my-section{
-  margin-bottom: 3rem;
+.journey h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.journey-text {
+  width: 55%;
+  margin: 0 auto 3rem;
+  color: #6b7280;
+}
+
+.days {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.day-card {
+  flex: 1;
+  background-color: #f8f9fb;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+}
+
+.day-card:hover {
+  border-color: #1d4ed8;
+  box-shadow: 0 10px 25px rgba(29, 78, 216, 0.15);
+  cursor: pointer;
+}
+
+.day-card h2 {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  padding: 0.35rem 0.9rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.day-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.day-card ul {
+  list-style: none;
+}
+
+.day-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
 }
 
 
-
+.day-card i {
+  color: #1d4ed8;
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
 
 
 
 /* Footer */
 
-footer{
+footer {
   width: 85vw;
   margin: 0 auto;
   padding: 2rem 2rem;
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-.footer-top{
+.footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
 }
 
-.footer img{
+.footer img {
   height: 2.5rem;
 }
 
-.social-links{
+.social-links {
   display: flex;
   gap: 1rem;
 }
 
-i{
+.social-links i {
   font-size: 2rem;
   color: #0d1b2a;
 }
 
-.footer hr{
-  border: none;
-  border-top: 1px solid rgba(128, 128, 128, 0.3);
+.social-links i:hover {
+  color: #1d4ed8;
 }
 
-.copyright{
+.footer hr {
+  border: none;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.copyright {
   text-align: center;
   margin-top: 1.5rem;
   color: #6b7280;
